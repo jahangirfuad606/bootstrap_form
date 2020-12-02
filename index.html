@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css link -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Bootstrap</title>
+  </head>
+  <body>
+    <!-- Layout -->
+    <section>
+      <div class="container box">
+        <div class="form">
+        <div class="mb-3">
+        <label for="email1" class="form-label">Enter your email address</label>
+        <input type="email" class="form-control email1" id="email1" name="email1" placeholder="Email Address">
+        </div>
+        <div class="mb-3">
+        <label for="password1" class="form-label">Password</label>
+        <input type="password" class="form-control password1" id="password1" name="password1" placeholder="Password">
+        </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container box">
+        <div class="form">
+        <div class="row">
+        <div class="col">
+        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+        </div>
+        <div class="col">
+        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+        </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section>
+      <div class="container box">
+        <form class="row g-3 form">
+        <div class="col-md-6">
+        <label for="email2" class="form-label">Email</label>
+        <input type="email" class="form-control email2" id="email2" name="email2" placeholder="Email Address">
+        </div>
+        <div class="col-md-6">
+        <label for="password2" class="form-label">Password</label>
+        <input type="password" class="form-control password2" id="password2" name="password2" placeholder="Password">
+        </div>
+        <div class="col-12">
+        <label for="address2" class="form-label">Address</label>
+        <input type="text" class="form-control address2" id="address2" name="address2" placeholder="Home">
+        </div>
+        <div class="col-12">
+        <label for="address2" class="form-label">Address 2</label>
+        <input type="text" class="form-control address2" id="address2" name="address2" placeholder="Office">
+        </div>
+        <div class="col-md-6">
+        <label for="city" class="form-label">City</label>
+        <input type="text" class="form-control city" id="city" name="city">
+        </div>
+        <div class="col-md-4">
+        <label for="state" class="form-label">State</label>
+        <select class="form-select state" id="state" name="state">
+        <option selected>Choose</option>
+        <option>...</option>
+        <option>...</option>
+        <option>...</option>
+        </select>
+        </div>
+        <div class="col-md-2">
+        <label for="zip" class="form-label">Zip</label>
+        <input type="text" class="form-control zip" id="zip" name="zip">
+        </div>
+        <div class="col-12">
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck" name="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+        Check me out
+        </label>
+        </div>
+        </div>
+        <div class="col-12">
+        <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+        </form>
+      </div>
+    </section>
+    <section>
+      <div class="container box">
+       <form class="form">
+       <div class="row mb-3">
+       <label for="email3" class="col-sm-2 col-form-label">Email</label>
+       <div class="col-sm-10">
+       <input type="email" class="form-control email3" id="email3" name="email3">
+       </div>
+       </div>
+       <div class="row mb-3">
+       <label for="password3" class="col-sm-2 col-form-label">Password</label>
+       <div class="col-sm-10">
+       <input type="password" class="form-control password3" id="password3" name="password3">
+       </div>
+       </div>
+       <fieldset class="row mb-3">
+       <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+       <div class="col-sm-10">
+       <div class="form-check">
+       <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+       <label class="form-check-label" for="gridRadios1">
+       Male
+       </label>
+       </div>
+       <div class="form-check">
+       <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+       <label class="form-check-label" for="gridRadios2">
+       Female
+       </label>
+       </div>
+       <div class="form-check disabled">
+       <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+       <label class="form-check-label" for="gridRadios3">
+       Others
+       </label>
+       </div>
+       </div>
+       </fieldset>
+       <div class="row mb-3">
+       <div class="col-sm-10 offset-sm-2">
+       <div class="form-check">
+       <input class="form-check-input" type="checkbox" id="gridCheck1" name="gridCheck1">
+       <label class="form-check-label" for="gridCheck1">
+       Agree to terms and conditions.
+       </label>
+       </div>
+       </div>
+       </div>
+       <button type="submit" class="btn btn-danger">Sign in</button>
+       </form>  
+      </div>
+    </section>
+    <!-- Layout -->
+    <!-- Validation -->
+    <section>
+      <div class="container box">
+        <form class="row g-3 needs-validation form" novalidate>
+  <div class="col-md-4">
+    <label for="f_name" class="form-label">First name</label>
+    <input type="text" class="form-control f_name" id="f_name" name="f_name" placeholder="Enter You First Name" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div> 
+
+  <div class="col-md-4">
+    <label for="l_name" class="form-label">Last name</label>
+    <input type="text" class="form-control l_name" id="l_name" name="l_name" placeholder="Enter You Last Name" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <label for="username" class="form-label">Username</label>
+    <div class="input-group">
+      <span class="input-group-text" id="inputGroupPrepend">@</span>
+      <input type="text" class="form-control username" id="username" name="username" aria-describedby="inputGroupPrepend" placeholder="Enter You Username" required>
+      <div class="invalid-feedback">
+        Please choose a username.
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <label for="city" class="form-label">City</label>
+    <input type="text" class="form-control city" id="city" name="city" placeholder="Enter Your City Name"p required>
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <label for="state" class="form-label">State</label>
+    <select class="form-select state" id="state" name="state" required>
+      <option selected disabled value="">Choose</option>
+      <option>Dhaka</option>
+      <option>Rangpur</option>
+      <option>Rajshahi</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <label for="zip" class="form-label">Zip</label>
+    <input type="text" class="form-control zip" id="zip" name="zip" placeholder="Zip Code" required>
+    <div class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+  </div>
+
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions.
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+
+</form>
+      </div>
+    </section>
+
+    <section>
+      <div class="container box">
+        <form class="was-validated form">
+  <div class="mb-3">
+    <label for="bio" class="form-label">Bio</label>
+    <textarea class="form-control is-invalid bio" id="bio" name="bio" placeholder="Please tell about you" required></textarea>
+  </div>
+
+  <div class="form-check mb-3">
+    <input type="checkbox" class="form-check-input" id="checkbox" name="checkbox" required>
+    <label class="form-check-label" for="checkbox">Agree to terms and conditions.
+</label>
+  </div>
+
+  <div class="form-check">
+    <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+    <label class="form-check-label" for="validationFormCheck2">Agree to terms and conditions.</label>
+  </div>
+  <div class="form-check mb-3">
+    <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+    <label class="form-check-label" for="validationFormCheck3">Or disagree to terms and conditions.</label>
+  </div>
+
+  <div class="mb-3">
+    <select class="form-select" required aria-label="select example">
+      <option value="">Gender</option>
+      <option value="1">Male</option>
+      <option value="2">Female</option>
+      <option value="3">Others</option>
+    </select>
+    <div class="invalid-feedback">Please select your gender</div>
+  </div>
+
+  <div class="mb-3">
+    <input type="file" class="form-control" aria-label="file example" required>
+    <div class="invalid-feedback">Choose your file</div>
+  </div>
+
+  <div class="mb-3">
+   <button class="btn btn-primary" type="submit">Submit form</button> 
+  </div>
+</form>
+      </div>
+    </section>
+    <!-- Validation -->
+    <!-- js links -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
